@@ -1,0 +1,26 @@
+int main()
+{
+ int i;
+ float a[5],result=0, perc;
+
+ printf("Enter the marks of 5 subjects\n");
+
+ for (i=0;i<5;i++)
+ {
+     scanf("%f",&a[i]);
+     result += a[i];
+ }
+
+ printf("Entered marks:\n");
+ for (i= 0;i<5;i++)
+ {
+     printf("%f ",a[i]);
+ }
+
+printf("\nTotal marks: %f\n ",result);
+perc=(result/500)*100;
+printf("\nPercentage of your marks = %f\n",perc);
+
+getch();
+
+}
